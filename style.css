@@ -1,0 +1,162 @@
+:root {
+  --main-width: 968px;
+  --link-color: #3a7b8f;
+  --yellow: #ffd800;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  background: linear-gradient(to right bottom, #fec051, #3aa6be 85%);
+  opacity: 0.4;
+}
+
+ul {
+  list-style: none;
+}
+
+pre,
+code {
+  white-space: pre-line;
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.container {
+  width: var(--main-width);
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: var(--main-width);
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.20);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header-image {
+  width: 175px;
+  border-radius: 50%;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ececec;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 150px;
+  height: 2px;
+  background-color: var(--yellow);
+}
+
+.section-content {
+  margin: 10px 0;
+}
+
+.section-content li::before {
+  content: ">";
+  padding-right: 5px;
+  color: var(--link-color);
+}
+
+.section-content li:hover:before {
+  color: var(--yellow);
+}
+
+.nav {
+  padding: 0 0 25px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 5px 15px;
+  color: #ffffff;
+  background-color: var(--link-color);
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.pre {
+  margin: 0;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #eeeeee;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-rsschool {
+  width: 94px;
+  height: 35px;
+  margin: 25px 0;
+  background-image: url(./assets/svg/rs_school_js.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
