@@ -48,7 +48,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
 .container {
@@ -164,6 +164,45 @@ a:hover {
   background-color: #eeeeee;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: var(--main-padding);
+}
+
+.project {
+  flex-basis: calc(50% - calc(var(--main-padding) / 2));
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project>a {
+  line-height: 0;
+}
+
+.project:nth-child(odd) {
+  margin-right: var(--main-padding);
+}
+
+.project__link {
+  display: block;
+  padding: var(--main-padding);
+  /* margin: var auto 15px; */
+}
+
+.project__image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.project__image:hover {
+  animation: rotate-block 3s linear infinite;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -202,6 +241,14 @@ a:hover {
     padding: var(--main-padding);
   }
 
+  .projects {
+    flex-direction: column;
+  }
+
+  .project:nth-child(odd) {
+    margin-right: 0;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -213,20 +260,20 @@ a:hover {
 
 @keyframes rotate-block {
   0% {
-    transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
 
   25% {
     opacity: 0.8;
-    transform: perspective(300px) scale(0.97) rotateX(-5deg) rotateY(-15deg);
+    transform: perspective(1000px) scale(0.97) rotateX(-5deg) rotateY(-15deg);
   }
 
   75% {
     opacity: 1;
-    transform: perspective(300px) scale(1.03) rotateX(5deg) rotateY(15deg);
+    transform: perspective(1000px) scale(1.03) rotateX(5deg) rotateY(15deg);
   }
 
   100% {
-    transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
 }
