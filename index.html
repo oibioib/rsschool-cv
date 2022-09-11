@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./prism.css">
   <link rel="icon" href="./assets/favicon.ico">
   <title>Bodal Pavel - CV</title>
   <meta name="description" content="Bodal Pavel CV">
@@ -70,9 +71,16 @@
         <section class="section" id="code">
           <h2 class="section-title">Code</h2>
           <div class="section-content">
-            <pre class="pre">
-              <code class="code">const add = a =&gt; b =&gt; a + b;</code>
-            </pre>
+            <pre class="pre language-javascript"><code 
+              class="code">// rgbToHex(255, 255, 255) returns FFFFFF
+const rgbToHex = (...colors) => {
+    return [...colors]
+        .map(color => Math.max(0, Math.min(255, color))
+            .toString(16)
+            .padStart(2, '0')
+            .toUpperCase())
+        .join('');
+}</code></pre>
           </div>
         </section>
         <section class="section" id="projects">
@@ -142,6 +150,7 @@
       </div>
     </footer>
   </div>
+  <script src="./prism.js"></script>
 </body>
 
 </html>
