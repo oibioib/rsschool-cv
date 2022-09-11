@@ -56,9 +56,10 @@ a:hover {
   text-decoration: none;
   background-image: linear-gradient(rgba(255, 216, 0, 0.5), rgba(255, 216, 0, 0.5));
   background-repeat: repeat-x;
-  background-position: 0 80%;
+  background-position: 0 88%;
   background-size: 100% 20%;
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
+  border-radius: 3px;
 }
 
 .link:hover {
