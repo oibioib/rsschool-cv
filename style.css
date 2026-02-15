@@ -128,6 +128,21 @@ a:hover {
   margin: 10px 0;
 }
 
+.section-content li {
+  padding-left: 15px;
+}
+
+.section-content li::before {
+  content: '>';
+  padding-right: 5px;
+  color: var(--link-color);
+  margin-left: -15px;
+}
+
+.section-content li:hover:before {
+  color: var(--yellow);
+}
+
 .nav {
   padding: 0 0 var(--main-padding);
 }
