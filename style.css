@@ -54,7 +54,10 @@ a:hover {
 .link {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
-  background-image: linear-gradient(rgba(255, 216, 0, 0.5), rgba(255, 216, 0, 0.5));
+  background-image: linear-gradient(
+    rgba(255, 216, 0, 0.5),
+    rgba(255, 216, 0, 0.5)
+  );
   background-repeat: repeat-x;
   background-position: 0 88%;
   background-size: 100% 20%;
@@ -172,6 +175,13 @@ a:hover {
   opacity: 1;
 }
 
+.pre {
+  margin: 0;
+  padding: var(--main-padding);
+  border-radius: 7px;
+  background-color: #eeeeee;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -282,11 +292,45 @@ a:hover {
   }
 
   25% {
-    transform: matrix3d(1.01, 0.01, 0, 0.001, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(
+      1.01,
+      0.01,
+      0,
+      0.001,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    );
   }
 
   75% {
-    transform: matrix3d(0.99, -0.00495, 0, -0.001, 0, 0.99, 0, -0.0001, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(
+      0.99,
+      -0.00495,
+      0,
+      -0.001,
+      0,
+      0.99,
+      0,
+      -0.0001,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    );
   }
 
   100% {
@@ -300,7 +344,24 @@ a:hover {
   }
 
   25% {
-    transform: matrix3d(1.002, 0.002, 0, 0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(
+      1.002,
+      0.002,
+      0,
+      0.0002,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    );
   }
 
   75% {

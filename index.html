@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./prism.css" />
     <link rel="icon" href="./assets/favicon.ico" />
     <title>Bodal Pavel - CV</title>
     <meta name="description" content="Bodal Pavel CV" />
@@ -37,6 +38,9 @@
           </li>
           <li class="nav-item">
             <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#code" class="nav-link">Code</a>
           </li>
           <li class="nav-item">
             <a href="#projects" class="nav-link">Projects</a>
@@ -110,6 +114,21 @@
                 <li>Graphics: Photoshop, Figma</li>
                 <li>CMS: Wordpress, Opencart</li>
               </ul>
+            </div>
+          </section>
+          <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <div class="section-content">
+              <pre class="pre language-javascript"><code 
+              class="code">// rgbToHex(255, 255, 255) returns FFFFFF
+const rgbToHex = (...colors) => {
+    return [...colors]
+        .map(color => Math.max(0, Math.min(255, color))
+            .toString(16)
+            .padStart(2, '0')
+            .toUpperCase())
+        .join('');
+}</code></pre>
             </div>
           </section>
           <section class="section" id="projects">
@@ -350,5 +369,6 @@
         </div>
       </footer>
     </div>
+    <script src="./prism.js"></script>
   </body>
 </html>
