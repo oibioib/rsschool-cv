@@ -88,6 +88,11 @@ a:hover {
   padding: var(--main-padding) 0;
 }
 
+.header-image {
+  width: 18rem;
+  border-radius: 50%;
+}
+
 .main-title {
   font-size: 3rem;
   font-weight: 600;
