@@ -205,3 +205,18 @@ a:hover {
 .project__image:hover {
   animation: rotate-block 2.5s linear infinite;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-rsschool {
+  width: 9.4rem;
+  height: 3.5rem;
+  margin: 25px 0;
+  background-image: url(./assets/svg/rs_school_js.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
