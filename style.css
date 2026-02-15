@@ -167,3 +167,41 @@ a:hover {
   text-decoration: none;
   opacity: 1;
 }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: var(--main-padding);
+}
+
+.project {
+  flex-basis: calc(50% - calc(var(--main-padding) / 2));
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project > a {
+  line-height: 0;
+}
+
+.project:nth-child(odd) {
+  margin-right: var(--main-padding);
+}
+
+.project__link {
+  display: block;
+  padding: var(--main-padding);
+}
+
+.project__image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.project__image:hover {
+  animation: rotate-block 2.5s linear infinite;
+}
